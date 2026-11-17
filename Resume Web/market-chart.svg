@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="60%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Terminal Grid Lines -->
+  <line x1="30" y1="40" x2="370" y2="40" stroke="#1e293b" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="30" y1="90" x2="370" y2="90" stroke="#1e293b" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="30" y1="140" x2="370" y2="140" stroke="#1e293b" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="30" y1="190" x2="370" y2="190" stroke="#1e293b" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="30" y1="240" x2="370" y2="240" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Candlesticks Background -->
+  <!-- Candle 1 -->
+  <line x1="70" y1="150" x2="70" y2="210" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="65" y="165" width="10" height="30" fill="#ef4444" rx="1"/>
+
+  <!-- Candle 2 -->
+  <line x1="120" y1="130" x2="120" y2="195" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="115" y="140" width="10" height="40" fill="#10b981" rx="1"/>
+
+  <!-- Candle 3 -->
+  <line x1="170" y1="110" x2="170" y2="170" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="165" y="120" width="10" height="35" fill="#10b981" rx="1"/>
+
+  <!-- Candle 4 (Gold / Research Highlight) -->
+  <line x1="220" y1="80" x2="220" y2="150" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="215" y="95" width="10" height="40" fill="url(#goldGrad)" rx="1"/>
+
+  <!-- Candle 5 -->
+  <line x1="270" y1="65" x2="270" y2="130" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="265" y="75" width="10" height="40" fill="#10b981" rx="1"/>
+
+  <!-- Candle 6 -->
+  <line x1="320" y1="45" x2="320" y2="105" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="315" y="55" width="10" height="35" fill="#10b981" rx="1"/>
+
+  <!-- Trend Curve Area Fill -->
+  <path d="M 40 230 Q 90 210, 140 180 T 230 115 T 310 70 T 360 45 L 360 240 L 40 240 Z" fill="url(#areaGrad)"/>
+
+  <!-- Main Upward Trend Line -->
+  <path d="M 40 230 Q 90 210, 140 180 T 230 115 T 310 70 T 360 45" fill="none" stroke="url(#lineGrad)" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Peak Indicator -->
+  <circle cx="360" cy="45" r="5" fill="#10b981"/>
+  <circle cx="360" cy="45" r="9" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Gold Research Callout Dot -->
+  <circle cx="220" cy="115" r="4.5" fill="#f59e0b"/>
+  <circle cx="220" cy="115" r="8" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Ticker Label -->
+  <rect x="260" y="25" width="105" height="22" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="312" y="39" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#10b981" text-anchor="middle" font-weight="bold">ALPHA ▲ +84.4%</text>
+</svg>

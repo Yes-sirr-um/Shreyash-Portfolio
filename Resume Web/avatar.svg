@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="96" fill="url(#avatarGrad)" stroke="#ffffff" stroke-width="4"/>
+  <!-- Head & Hair Silhouette -->
+  <circle cx="100" cy="72" r="34" fill="#f8fafc"/>
+  <!-- Hair Styling -->
+  <path d="M68 68 C68 46 80 36 100 36 C120 36 132 46 132 68 C124 58 116 54 100 54 C84 54 76 58 68 68 Z" fill="#0f172a"/>
+  <!-- Neck -->
+  <rect x="92" y="100" width="16" height="16" fill="#f8fafc"/>
+  <!-- Suit / Body -->
+  <path d="M44 182 C44 140 70 114 100 114 C130 114 156 140 156 182 Z" fill="url(#suitGrad)"/>
+  <!-- Shirt Collar & Tie -->
+  <polygon points="100,114 88,136 112,136" fill="#ffffff"/>
+  <polygon points="100,128 95,160 100,172 105,160" fill="#3b82f6"/>
+</svg>
